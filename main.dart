@@ -11,18 +11,18 @@ void main() {
   int? amount = int.parse(stdin.readLineSync()!);
 
   int totalSmall, totalMedium, totalLarge;
-  totalSmall = 5 * amount;
-  totalMedium = 7 * amount;
-  totalLarge = 10 * amount;
 
   switch (size) {
     case 'small':
+      totalSmall = 5 * amount; 
       print('Total price for $amount small pizza(s): $totalSmall USD');
       break;
     case 'medium':
+      totalMedium = 7 * amount;
       print('Total price for $amount medium pizza(s): $totalMedium USD');
       break;
     case 'large':
+      totalLarge = 10 * amount;
       print('Total price for $amount large pizza(s): $totalLarge USD');
       break;
     default:
