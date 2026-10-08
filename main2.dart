@@ -28,6 +28,7 @@ void main() {
         break;
       default:
         print('Invalid pizza size entered.');
+        print('Please enter a valid pizza size (small, medium, large).');
     
   
   }
