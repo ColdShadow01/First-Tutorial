@@ -15,13 +15,19 @@ void main() {
   totalMedium = 7 * amount;
   totalLarge = 10 * amount;
 
-  if (size == 'small') {
-    print('Total cost for $amount $size pizzas: $totalSmall USD');
-  } else if (size == 'medium') {
-    print('Total cost for $amount $size pizzas: $totalMedium USD');
-  } else if (size == 'large') {
-    print('Total cost for $amount $size pizzas: $totalLarge USD');
-  } else {
-    print('Invalid pizza size entered.');
+  switch (size) {
+    case 'small':
+      print('Total price for $amount small pizza(s): $totalSmall USD');
+      break;
+    case 'medium':
+      print('Total price for $amount medium pizza(s): $totalMedium USD');
+      break;
+    case 'large':
+      print('Total price for $amount large pizza(s): $totalLarge USD');
+      break;
+    default:
+      print('Invalid pizza size entered.');
+  
   }
+
 }
