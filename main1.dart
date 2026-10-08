@@ -47,10 +47,10 @@ void main() {
     default:
       print('Invalid pizza size entered.');
   
-  }
+      }
+
+    }
 
   }
-
-}
 
 }
