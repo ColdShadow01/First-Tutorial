@@ -13,12 +13,6 @@ void main() {
     String? sizeInput = stdin.readLineSync();
     String size = sizeInput?.toLowerCase().trim() ?? '';
 
-  
-    if (size != 'small' && size != 'medium' && size != 'large') {
-      print('Invalid pizza size entered. Please try again.');
-      continue; // Restarts the loop from the top
-    }
-
     print('Please enter the amount of pizzas of size $size: ');
   
     int amount = int.parse(stdin.readLineSync() ?? '0');
